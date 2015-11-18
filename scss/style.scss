@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+html {
+  height: 100%;
+}
+body {
+  background: url(../images/apples_bw.jpg) repeat center top;
+  min-width: 320px;
+  position: relative;
+  height: 100%;
+}
+
+input, textarea {
+  color: #444;
+  font:14px Helvetica,Arial,sans-serif;
+}
+.content {
+  background: url(../images/cdrquincy2.jpg) no-repeat center -80px #080808;
+  background-size: 1024px auto;
+  opacity: 0.8;
+  max-width: 840px;
+  box-shadow: 0 0 4px rgba(255,255,255,0.6);
+  min-height: 100%;
+  margin: 0 auto;
+  .nav {
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 20px;
+    li {
+      list-style: none;
+      a {
+        font-family: 'Cinzel', serif;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+    }
+  }
+  h1, h2 {
+    display: none;
+  }
+  .text {
+    margin-top: 300px;
+  }
+  p {
+    margin: 30px auto;
+    max-width: 540px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+    a {
+      font-size: 24px;
+    }
+  }
+}
+.contact {
+  width: 650px;
+  margin: 20px auto;
+  input {
+    margin-bottom: 12px;
+  }
+}
+label,input,textarea{
+  width: 100%;
+}
+input[type="text"],
+textarea {
+  padding: 4px 0;
+  text-indent: 2%;
+}
+input.button{
+  background: #fff;
+  border: none;
+  margin: 20px 0;
+  padding: 5px 10px;
+  width: auto;
+}
+
+.logos {
+  a {
+    display: inline-block;
+    margin: 2px;
+  }
+  p {
+    text-align: center;
+    margin: 40px auto;
+  }
+  .row1 {
+    text-align: center;
+    margin: 0 auto;
+    img {
+      height: 103px;
+    }
+  }
+  .row2 {
+    text-align: center;
+    margin: 0 auto;
+    img {
+      height: 70px;      
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .content {
+    p {
+      font-size: 16px;
+      max-width: 468px;
+    }
+    .contact {
+      width: 560px;
+    }
+    .logos {
+      .row1 {
+        img {
+          height: 88px;
+        }
+      }
+      .row2 {
+        img {
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .content {
+    background-size: 840px auto;
+    background-position: center -100px;
+    padding-top: 200px;
+    .contact {
+      width: 520px;
+    }
+    .logos {
+      .row1 {
+        img {
+          height: 81px;
+        }
+      }
+      .row2 {
+        img {
+          height: 56px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .content {
+    background-size: 680px auto;
+    background-position: center -80px;
+    padding-top: 160px;
+    p {
+      font-size: 16px;
+      max-width: 400px;
+    }
+    .contact {
+      width: 360px;
+    }
+    .logos {
+      .row1, .row2 {
+        width: 360px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .content {
+    background-size: 540px auto;
+    background-position: center -60px;
+    padding-top: 120px;
+    p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+    .contact {
+      max-width: 300px;
+    }
+    .logos {
+      .row1 {
+        width: 300px;
+        img {
+          height: 75px;
+        }
+      }
+      .row2 {
+        width: 300px;
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
